@@ -1,0 +1,10 @@
+<h1>View the brews</h1>
+
+<ul>
+  <% @brews.each do |brew| %>
+    <li><%= link_to brew.blend_name, brew_path(brew) %></li>
+  <% end %>
+</ul>
+
+<%= button_to "Newski brewski bewski", new_brew_path, {method: 'get'} %>
+<%= button_to "Findski the strongski brewski bewski", strong_brew_path, {method: 'get'} %>

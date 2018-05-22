@@ -1,0 +1,12 @@
+
+
+<h1>The Strongestski brewskis in townski</h1>
+  <img style='width: 10%; height: auto;'
+  src="http://images.clipartpanda.com/coffee-clip-art-acq4B9zcM.png" alt="sum_cofe">
+
+<% @brews.each do |brew| %>
+  <h3>What's the nameski? <%= brew.blend_name %></h3>
+  <small> Where's it fromski? <%= brew.origin %></small>
+  <marquee scrollamount="1000" loop='20' bgcolor="orange" behavior='alternate'>Which noteskis? <%= link_to brew.notes, brew_path(brew) %></marquee>
+  <p style="color: red;">How strongski? <%= brew.strength %></p>
+<% end %>

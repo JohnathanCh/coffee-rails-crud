@@ -1,0 +1,14 @@
+<h1>STEW a NEW BREW or TWO</h1>
+<%= form_for @brew do |f| %>
+  <%= render :partial => "form", :locals=>{:f=>f} %>
+
+  <%= f.submit 'Brew Brew Brah' %>
+<% end %>
+
+<h3>TRU, CONTINUE</h3>
+
+<!-- blend_name
+origin
+notes
+strength
+ -->

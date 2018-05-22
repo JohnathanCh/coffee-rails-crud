@@ -1,0 +1,15 @@
+<!-- blend_name
+origin
+notes
+strength
+ -->
+
+<h1><%= @brew.blend_name %></h1>
+<marquee><%= @brew.origin %></marquee>
+<marquee><%= @brew.notes %></marquee>
+<marquee><%= @brew.strength %></marquee>
+
+<%= button_to 'Indewski to brewskis', brews_path, {method: "get"} %>
+<%= button_to 'Reconstrewski the brewski', edit_brew_path(@brew), {method: "get"} %>
+<%= button_to 'Screwski the brewski', brew_path(@brew), {method: "delete"} %>
+<%#= link_to 'Screw the brew', brew_path(@brew), {method: "delete"} %>
